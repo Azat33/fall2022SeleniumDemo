@@ -14,8 +14,8 @@ public class HomeWorkDemoQaWebTables extends BaseTest{
     String fakeName = faker.name().firstName();
     String fakeLastName = faker.name().lastName();
     String fakeEmail = faker.internet().emailAddress();
-    String fakeAge = String.valueOf(faker.random().nextInt(18, 65));
-    String fakeSalary = String.valueOf(faker.random().nextInt(2000, 5000));
+    String fakeAge = String.valueOf(faker.number().numberBetween(18,65));
+    String fakeSalary = String.valueOf(faker.number().numberBetween(2000,10000));
     String fakeDepartment = faker.company().profession();
 
     @Test
